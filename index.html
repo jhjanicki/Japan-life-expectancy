@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>D3 lines</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+
+	<style>
+    @import url(http://fonts.googleapis.com/css?family=Dosis);
+	
+	body{
+		
+		width: 1250px;
+		overflow-x: hidden;
+		background-color: #f6e5ba;
+	}
+	
+	#vis {
+        min-height: 550px;
+        margin-top: 50px;
+        margin-bottom:50px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #blurb {
+        height: 60px;
+        border-top: 1px solid #e2e2e2;
+        padding-top: 20px;
+    }
+    path {
+        stroke: black;
+        stroke-width: 0.9;
+        fill: none;
+    }
+    line {
+        stroke: black;
+    }
+    .axis {
+        stroke-width: 0.8;
+        stroke: #000;
+        }
+        
+    path.current,
+    path.highlight.current {
+        stroke: #000;stroke-width:1.7;
+        }
+        
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+      }
+      
+   .datapoint:hover{
+		fill: black;
+      }
+      
+      h1,h2,h3,h4,p{
+	    font-family: 'Dosis', sans-serif;
+	    text-align: center;
+      }
+    
+
+	</style>
+	</head>
+<body>
+
+<div id="blurb">
+<div id="default-blurb">
+<h2>Japan</h2> 
+<p>The average life expectancy in Japan in 1960 was 70.14 years, and 85.9 in 2011.</p>
+</div>
+<div id="blurb-content"></div>
+</div>
+<div id="vis"></div>
+<p> Based on flowing data's life expectancy project. </p>
+<p> The main purpose of this viz is to practice making line charts and tool tips on hover. </p>
+<p> Data Source: Index Mundi. </p>
+		
+		
+
+
+
+
+
+
+<script src="js/d3.v3.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>		
+<script src="js/main.js"></script>
+<script src="external/jquery/jquery.js"></script>
+<script src="http://underscorejs.org/underscore-min.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>
